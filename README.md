@@ -1,6 +1,6 @@
 # Antigravity Skills for Academic Manuscript Writing
 
-分子生物学の学術論文原稿を執筆・校正・英訳するための [Antigravity](https://blog.google/technology/google-deepmind/antigravity-ai-coding-agent/) スキルセットです。
+分子生物学の学術論文原稿を執筆・校正・英訳するための [Antigravity](https://antigravity.google/) スキルセットです。
 
 ### スキル一覧
 
@@ -70,4 +70,5 @@ Discussion セクションの英文を校正せよ
 - セクションごとに個別のMarkdownファイルで管理する原稿構成
 - 分子生物学・生命科学分野の学術論文（他分野にも応用可能）
 - 典型的な連携フロー: `manuscript-review`（構造・一貫性チェック＋日本語校正） → `manuscript-translation`（英訳＋英文校閲）
+
 

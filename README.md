@@ -1,6 +1,6 @@
-# Antigravity Skills for Academic Manuscript Writing
+# Skills for Academic Manuscript Writing
 
-分子生物学の学術論文原稿を執筆・校正・英訳するための [Antigravity](https://antigravity.google/) スキルセットです。
+分子生物学の学術論文原稿を執筆・校正・英訳するための AI コーディングエージェント用スキルセットです。Claude Code、Codex、Antigravity など、`.agent/skills/` や `~/.agents/skills/` を認識するエージェントで共通して使用できます。
 
 ### スキル一覧
 
@@ -32,19 +32,19 @@ your-project/
 
 ```bash
 # リポジトリをクローンし、スキルをコピー
-git clone https://github.com/YusukeKimata-Moo/antigravity-manuscript-skills.git
-cp -r antigravity-manuscript-skills/shared-references .agent/skills/
-cp -r antigravity-manuscript-skills/manuscript-review .agent/skills/
-cp -r antigravity-manuscript-skills/manuscript-translation .agent/skills/
+git clone https://github.com/<your-username>/manuscript-skills.git
+cp -r manuscript-skills/shared-references .agent/skills/
+cp -r manuscript-skills/manuscript-review .agent/skills/
+cp -r manuscript-skills/manuscript-translation .agent/skills/
 ```
 
-スキルは Antigravity が自動的に検出します。追加の設定は不要です。
+スキルは対応するエージェント（Claude Code、Codex、Antigravity 等）が自動的に検出します。追加の設定は不要です。
 
 ### 使い方
 
 使用前に `shared-references/journal_guidelines.md` に投稿先ジャーナルの規定を記入してください。スキルがレビュー・翻訳時にこの情報を参照します。
 
-Antigravity に論文原稿の精査や英訳を依頼すると、関連するスキルが自動的に参照されます。
+エージェントに論文原稿の精査や英訳を依頼すると、関連するスキルが自動的に参照されます。
 
 **例：原稿レビュー**
 
@@ -70,5 +70,3 @@ Discussion セクションの英文を校正せよ
 - セクションごとに個別のMarkdownファイルで管理する原稿構成
 - 分子生物学・生命科学分野の学術論文（他分野にも応用可能）
 - 典型的な連携フロー: `manuscript-review`（構造・一貫性チェック＋日本語校正） → `manuscript-translation`（英訳＋英文校閲）
-
-

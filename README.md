@@ -32,7 +32,7 @@ your-project/
 
 ```bash
 # リポジトリをクローンし、スキルをコピー
-git clone https://github.com/<your-username>/manuscript-skills.git
+git clone https://github.com/YusukeKimata-Moo/manuscript-skills.git
 cp -r manuscript-skills/shared-references .agent/skills/
 cp -r manuscript-skills/manuscript-review .agent/skills/
 cp -r manuscript-skills/manuscript-translation .agent/skills/
@@ -70,3 +70,4 @@ Discussion セクションの英文を校正せよ
 - セクションごとに個別のMarkdownファイルで管理する原稿構成
 - 分子生物学・生命科学分野の学術論文（他分野にも応用可能）
 - 典型的な連携フロー: `manuscript-review`（構造・一貫性チェック＋日本語校正） → `manuscript-translation`（英訳＋英文校閲）
+

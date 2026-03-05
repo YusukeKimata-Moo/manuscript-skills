@@ -6,9 +6,9 @@
 
 | スキル                        | 説明                                                                                            |
 | ----------------------------- | ----------------------------------------------------------------------------------------------- |
-| **journal-guideline-checker** | ジャーナル投稿規程URLから情報を収集し、原稿のセクション構成や参考文献等のフォーマット要件を検証 |
 | **manuscript-review**         | 原稿の論理構造・セクション間整合性・用語の一貫性をチェックし、修正を支援（日本語・英語両対応）  |
 | **manuscript-translation**    | 日本語原稿を英訳しやすい文体に校正 → 学術英語に翻訳 → 英文校閲。英文校正のみの単独利用も可      |
+| **journal-guideline-checker** | ジャーナル投稿規程URLから情報を収集し、原稿のセクション構成や参考文献等のフォーマット要件を検証 |
 
 > 各スキルが共通で参照する日本語修正パターンやジャーナル規程は `shared-references/` に格納されます。
 
@@ -20,7 +20,7 @@
 your-project/
 └── .agent/
     └── skills/
-        ├── shared-references/          # 両スキル共通のリファレンス
+        ├── shared-references/          # 全スキル共通のリファレンス
         │   ├── japanese_patterns.md
         │   └── journal_guidelines.md   # ジャーナル投稿規定（エージェントが自動生成）
         ├── journal-guideline-checker/
@@ -77,3 +77,4 @@ URL: https://www.nature.com/nature/for-authors
 - セクションごとに個別のMarkdownファイルで管理する原稿構成
 - 分子生物学・生命科学分野の学術論文（他分野にも応用可能）
 - 典型的な連携フロー: `manuscript-review`（構造・一貫性チェック） → `manuscript-translation`（指定URLからの規程保存＋英訳・英文校閲） → `journal-guideline-checker`（自動保存された規程に基づくフォーマットの最終検証）
+
